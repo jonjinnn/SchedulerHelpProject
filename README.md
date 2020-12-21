@@ -18,7 +18,6 @@ Final Project INF133:
     1.8 From the Home page, user can press the Indeed and Linkedin logo to redirect to those webpages. Users can 
         also press the link under "Info" to redirect to webpages with specified job position. 
 
-
 2. Changed/exchanged features? 
     We decided to change the calendar into multiple tables that list the users interview schedule and application. 
     Calendar template library made it difficult for the user to see all available applications, was too heavy of an 
