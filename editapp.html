@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group 3">
+    <meta name="description" content="Delete Application Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- you would also link to Bootstrap here! -->
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <!-- Add additional services you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+
+    <!--Load JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Local scripts-->
+    <script type="text/javascript" src="js/config.js"></script>
+    <!--<script type="text/javascript" src="js/signin.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/addApp.js"></script>-->
+    <script type="text/javascript" src="js/editApp.js"></script>
+     
+    <!-- Style Sheets here!-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- New Nav Bar -->
+    <div class="topBar">
+        <div class="thumbnail">
+            <img class="thumb" src="images/thumbnail.png">
+        </div>
+        <div class="interPlan">
+            InterPlan
+        </div>
+    </div>
+    
+    <!-- Navigation Bar Buttons -->
+    <div class="topnav">
+        <a class="home" href="/user.html">Home</a>
+        <a class="add" href="/app.html" id="add-app">Add Application</a>
+        <a class="edit" href="/editapp.html" id="edit-app">Edit Application</a>
+        <a class="delete" href="/deleteapp.html" id="delete-app">Delete Application</a>
+        <a class="logout" id="logout">Log Out</a>
+    </div>
+    
+    <form id="choose-app">
+        <p>Select Application to Edit.</p>
+        <select id="application-change" name="application-change" value="" required>
+            <option disabled selected value> -- select an option -- </option>
+        </select>
+
+        <p>Select the change you want to make.</p>
+        <select id="selection" name="selection" value="" required>
+            <option disabled selected value> -- select an option -- </option>
+            <option value="interview_scheduled">New Interview Scheduled?</option>
+            <option value="job_extended">Job Offer Extended?</option>
+            <option value="job_accepted">Job Offer Accepted?</option>
+        </select><br>
+
+        <div id="interview-details">
+            <label for="interview-date">Interview Date:</label><br>
+            <input type="date" id="interview-date" name="interview-date" value=""><br>
+
+            <label for="interview-type">Interview Type:</label><br>
+            <select id="interview-type" name="interview-type" value="">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="behavioral">Behavioral</option>
+                <option value="technical">Technical</option>
+                <option value="final_round">Final Round</option>
+            </select><br>
+        </div>
+
+        <div id="offer-details">
+            <label for="offer-deadline">Offer Deadline:</label><br>
+            <input type="date" id="offer-deadline" name="offer-deadline" value=""><br>
+        </div>
+        <input id="addBtn" type="submit" value="Add App">
+    </form>
+    <p id="result"></p>
+    
+</body>
+
+</html>

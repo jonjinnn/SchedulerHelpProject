@@ -1,0 +1,140 @@
+.container-margin{
+    padding:0rem;
+    overflow: hidden;
+    height:100vh;
+}
+
+.topBar {
+    background-color: #6495ed;
+    width: 100%;
+}
+
+.topBar .interPlan {
+    font-size: 64px;
+    font-family: Roboto;
+    color: white;
+}
+
+.topBar .topText {
+    font-size: 15px;
+    text-align: right;
+    margin-left: 7.5px;
+    color: white;
+    font-family: Roboto;
+}
+
+img {
+    width: 148px;
+    height: 132px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.left{
+    background-color: #acc1e9;
+}
+
+#signin{
+    margin-top: 25%;
+}
+
+#register{
+    margin-top: 10%;
+}
+
+.welcome {
+    font-family: Roboto;
+    font-size: 48px;
+    color: #7e7b7b;
+    margin: 15px;
+    text-align: center;
+}
+
+.signInText {
+    font-size: 18px;
+    color: #7e7b7b;
+    margin: 15px;
+    text-align: center;
+
+}
+
+#returnEmail {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    margin: 15px;
+
+}
+
+
+#returnPassword {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#signinBtn {
+    width: 323px;
+    height: 75px;
+    background: #acc1e9;
+    border: 3px solid #7e7b7b;
+    border-radius: 30px;
+    color: #7e7b7b;
+    margin-top: 15px;
+    margin-left: 10%;
+    font-size:125%;
+}
+
+.createAcc {
+    font-size: 48px;
+    font-family: Roboto;
+    color: #7e7b7b;
+    margin: 15px;
+    text-align: center;
+
+}
+
+#name {
+    width: 400px;
+    height: 63px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#email {
+    width: 400px;
+    height: 63px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+
+#password {
+    width: 400px;
+    height: 63px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#submitBtn {
+    width: 323px;
+    height: 75px;
+    background: #6495ed;
+    border: 3px solid #7e7b7b;
+    border-radius: 30px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 12.5%;
+    font-size:125%;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    font-family: Roboto;
+}

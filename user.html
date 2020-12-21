@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group 3">
+    <meta name="description" content="TechTrackApp/user-page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <!-- Add additional services you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+
+    <!--Load JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Local scripts-->
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+     
+    <!-- Style Sheets here!-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+
+    </head>
+<body>
+    <!-- New Nav Bar -->
+    <div class="topBar">
+        <div class="thumbnail">
+            <img class="thumb" src="images/thumbnail.png">
+        </div>
+        <div class="interPlan">
+            InterPlan
+        </div>
+    </div>
+    
+    
+  <!-- Navigation Bar Buttons-->
+  <div class="topnav">
+    <a class="home" href="#home">Home</a>
+    <a class="add" href="#add-app" id="add-app">Add Application</a>
+    <a class="edit" href="#edit-app" id="edit-app">Edit Application</a>
+    <a class="delete" href="#delete-app" id="delete-app">Delete Application</a>
+    <a class="logout" href="#logout" id="logout">Log Out</a>
+  </div>
+
+  <!-- Interview Table -->
+  <div class="container">
+    <div class="row">
+      <div class="col">          <!--Start of Column of #1-->
+        <p id='sayHello'> </p>
+  
+        <div id="upcoming-div">
+          <h1 id='userUpcomingInter'></h1>
+        
+          <table class="tableStyle">
+            <thead>
+              <tr>
+                <th scope="col">Company</th>
+                <th scope="col">Position</th>
+                <th scope="col">Location</th>
+                <th scope="col">Interview Date</th>
+                <th scope="col">Interview Type</th>
+                <th scope="col">Offer Deadline</th>
+                <th scope="col">Status</th>
+                <th scope="col">Date Applied</th>
+              </tr>
+            </thead>
+            <tbody id="interview-body">
+            </tbody>
+          </table>
+        </div>
+  
+        <div id="offer-deadline-div">
+          <h1 id='user-offer-deadline'></h1>
+          <table class="tableStyle">
+            <thead>
+              <tr>
+                <th scope="col">Company</th>
+                <th scope="col">Position</th>
+                <th scope="col">Location</th>
+                <th scope="col">Interview Date</th>
+                <th scope="col">Interview Type</th>
+                <th scope="col">Offer Deadline</th>
+                <th scope="col">Status</th>
+                <th scope="col">Date Applied</th>
+              </tr>
+            </thead>
+            <tbody id="offers-body">
+            </tbody>
+          </table>
+        </div>
+  
+        <div id="follow-up-div">
+          <h1 id='user-follow-up'>It's been more than 2 weeks since you applied. Follow up on these companies!</h1>
+          <!-- <h1 id='user-follow-up'>Follow up on these companies!</h1> -->
+          <table class="tableStyle">
+            <thead>
+              <tr>
+                <th scope="col">Company</th>
+                <th scope="col">Position</th>
+                <th scope="col">Location</th>
+                <th scope="col">Interview Date</th>
+                <th scope="col">Interview Type</th>
+                <th scope="col">Offer Deadline</th>
+                <th scope="col">Status</th>
+                <th scope="col">Date Applied</th>
+              </tr>
+            </thead>
+            <tbody id="follow-up-body">
+            </tbody>
+          </table>
+        </div>
+      </div>      <!--End of Column of #1-->
+      <div class="col">    <!--Start of Column of #2-->
+        <!-- made indeed logo clickable, redirect to indeed -->
+        <h1> We also found you job searches based on your applications!</h1>
+        <!-- <h1>Jobs you might be interested in!</h1> -->
+        <div class="jobs">
+          <div>
+            <a  href="https://www.linkedin.com/">                   
+              <img class="logo" src="/images/linkedinLogo.png" alt="LinkedIn Logo" width="442">
+            </a>
+            <!-- Job Table -->
+            
+            <table class="tableStyle">
+              <thead>
+                <tr>
+                  <th scope="col">Job Position</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Info</th>
+                </tr>
+              </thead>
+              <tbody id="linked-body">
+              </tbody>
+            </table>
+          </div>
+          
+          <div>
+            <a href="https://www.indeed.com/">                   
+              <img class="logo" src="/images/indeedLogo.png" alt="Indeed Logo">
+            </a>
+            <!-- Job Table -->
+            <table class="tableStyle">
+              <thead>
+                <tr>
+                  <th scope="col">Job Position</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Info</th>
+                </tr>
+              </thead>
+              <tbody id="indeed-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+      </div>          <!--End of Column of #2-->
+    </div>
+  
+    <div class="row">
+      <div class="col">
+        <h1> Some videos tips for your interview types!</h1>
+        <!-- Youtube Video -->
+        <div class="video-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

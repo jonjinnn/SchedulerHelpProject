@@ -1,0 +1,235 @@
+p {
+	font-size: 20px;
+	font-family: Cambria;
+}
+
+.jobs{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    margin: 10px;
+}
+img {
+    padding: 25px;
+}
+
+.topnav{
+	background-color: cornflowerblue;
+	overflow: hidden;
+}
+
+.topnav a{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 30px;
+	display: block;
+	font-family: Roboto;
+}
+
+
+.topnav a:hover {
+	color: lightblue;
+}
+
+.topnav a.active {
+	background-color: grey;
+	color: black;
+}
+
+.row {
+	display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+	flex: 50%;
+	padding: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	
+  }
+
+.tableStyle {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+	margin-bottom: 20px;
+  }
+  
+  .tableStyle td, .tableStyle th {
+	border: 1px solid black;
+	padding: 8px;
+  }
+  
+  .tableStyle tr:nth-child(even){background-color: white;}
+  
+  .tableStyle tr:hover {background-color: lightpink;}
+  
+  .tableStyle th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: lightgreen;
+	color: grey;
+  }
+
+.video-responsive {
+	padding-bottom: 50%;
+	position: relative;
+	height: 0;
+}
+
+.video-responsive iframe {
+	left:0;
+	top:0;
+	height: 300px;
+	width: 500px;
+}
+
+.topBar {
+    position: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    height: 171px;
+    background-color: #6495ed;
+}
+
+.topBar .interPlan {
+    position: absolute;
+    width: 256px;
+    height: 75px;
+    left: 283px;
+    top: 49px;
+    text-align: left;
+    font-size: 64px;
+    font-family: Roboto;
+    color: white;
+}
+
+.thumb {
+    width: 148px;
+    height: 132px;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0px;
+}
+.topnav .home{
+    position: 100%;
+    
+}
+
+.topnav .add {
+    position: 100%;
+    
+}
+
+.topnav .edit {
+    position: 100%;
+    
+}
+
+.topnav .delete {
+    position: 100%;
+    
+}
+
+.topnav .logout {
+    position: 100%;
+    
+}
+
+#company-name {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#position-name {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#location {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#date-applied {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#status {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#interview-type {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#addBtn {
+    width: 200px;
+    height: 63px;
+    background: #6495ed;
+    border: 3px solid #7e7b7b;
+    border-radius: 30px;
+    color: white;
+}
+
+#deleteBtn {
+    width: 200px;
+    height: 63px;
+    background: #6495ed;
+    border: 3px solid #7e7b7b;
+    border-radius: 30px;
+    color: white;
+}
+
+#application-change {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#application-delete {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+#selection {
+    width: 400px;
+    height: 63px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+input[type="text"] {
+    font-size: 24px;
+    font-family: Roboto;
+}
+
+input[type="date"] {
+    font-size: 24px;
+    font-family: Roboto;
+}

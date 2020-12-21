@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group 3">
+    <meta name="description" content="TechTrackApp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+     <!-- you would also link to Bootstrap here! -->
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <!-- Add additional services you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+    <script type="text/javascript" src="/js/config.js"></script>
+
+    <!--Load JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Local scripts-->
+    <script type="text/javascript" src="/js/signin.js"></script>
+     
+    <!-- Style Sheets here!-->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container-fluid container-margin">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light topBar">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/images/thumbnail.png">
+                </a>
+                <div class="interPlan">
+                InterPlan
+                </div>
+                <div class="topText">
+                    An interview planning website
+                </div>
+            </nav>
+        </div>
+        <div class="row h-100">
+            <div class="col-4 left d-flex justify-content-center">
+                <form id="signin">
+                    <div class="welcome"> Welcome Back!</div>
+                    <div class="signInText">Already have an account? Sign In.</div>
+                    <input type="text" id="returnEmail" name="returnEmail" placeholder="Email"><br>
+                    <input type="text" id="returnPassword" name="returnPassword" placeholder="Password"><br>
+                    <input id="signinBtn" type="submit" value="Sign In">
+                    <p id="errorMsg"></p>
+                </form>
+            </div>
+
+            <div class="col-8 d-flex justify-content-center">
+                <form id="register">
+                    <div class="createAcc">Create Account</div>
+                    <input type="text" id="name" name="name" placeholder="Name"><br>
+                    <input type="text" id="email" name="email" placeholder="Email"><br>
+                    <input type="text" id="password" name="password" placeholder="Password"><br>
+                    <input id="submitBtn" type="submit" value="Register">
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
