@@ -1,4 +1,3 @@
-Final Project INF133:
 
 1. How to build and run project?
     1.1 Download project file and install package "npm install -g live-server" in command line. 
